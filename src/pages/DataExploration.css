@@ -1,0 +1,95 @@
+/* --- DATA EXPLORATION PAGE STYLES --- */
+.explorer-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 860px) {
+  .explorer-layout {
+    grid-template-columns: 260px 1fr;
+  }
+}
+
+.filter-sidebar {
+  background: var(--bg-muted);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.filter-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.input-select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-medium);
+  background: white;
+  font-size: 0.85rem;
+}
+
+.search-bar-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.preview-card {
+  background: white;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+}
+
+.preview-card-header {
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.preview-text {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}

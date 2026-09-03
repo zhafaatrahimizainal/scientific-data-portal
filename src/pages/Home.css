@@ -1,0 +1,6 @@
+/* --- HOME PAGE STYLES --- */
+.home-page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

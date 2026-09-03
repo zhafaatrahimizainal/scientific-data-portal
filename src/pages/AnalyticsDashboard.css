@@ -1,0 +1,43 @@
+/* --- ANALYTICS DASHBOARD PAGE STYLES --- */
+.metrics-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.metric-card {
+  background: white;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.metric-value {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin: 0.25rem 0;
+}
+
+.metric-trend {
+  font-size: 0.775rem;
+  font-weight: 700;
+}
+
+.metric-trend.positive {
+  color: #137333;
+}
+
+.metric-trend.neutral {
+  color: var(--text-accent);
+}

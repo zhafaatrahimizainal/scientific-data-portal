@@ -1,0 +1,61 @@
+/* --- POSTGRESQL QUERYING PAGE STYLES --- */
+.query-workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.query-editor-card {
+  background: var(--bg-code);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--border-dark);
+}
+
+.editor-topbar {
+  background: #1e293b;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+}
+
+.editor-title {
+  color: #f8fafc;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sql-editor-textarea {
+  width: 100%;
+  background: transparent;
+  color: #50fa7b;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 1.25rem;
+  border: none;
+  outline: none;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.query-results-card {
+  background: white;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.results-topbar {
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-muted);
+  border-bottom: 1px solid var(--border-medium);
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
