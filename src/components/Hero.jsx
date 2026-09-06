@@ -10,7 +10,7 @@ const TECH_STACK = [
 
 export default function Hero() {
   return (
-    <section id="overview" className="hero-section">
+    <section id="hero" className="hero-section">
       <div className="portal-container">
         <h1 className="hero-heading">
           Scientific Data

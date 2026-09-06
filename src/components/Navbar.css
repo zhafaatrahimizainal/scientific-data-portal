@@ -121,6 +121,13 @@
   color: #1f2937;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
+}
+
+.sign-in:hover,
+.main-nav-links a.active-link {
+  color: var(--text-primary);
+  font-weight: 700;
 }
 
 .open-portal {
@@ -187,6 +194,20 @@
   border-top: 1px solid var(--border-light);
 }
 
+.sign-out {
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 /* --- TIER 3: FLOATING SUB-NAV CARD --- */
 .sub-nav-section {
   background: transparent;
@@ -200,7 +221,8 @@
   background: var(--bg-main);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-card);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  pointer-events: auto;
   display: flex;
   align-items: center;
   padding: 0.65rem 1.25rem;
@@ -227,6 +249,36 @@
   display: flex;
   gap: 1.25rem;
   align-items: center;
+}
+
+.sub-nav-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--text-secondary, #64748b);
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.sub-nav-btn:hover {
+  color: var(--text-primary, #0f172a);
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Active State Pill Highlight */
+.sub-nav-btn.active {
+  color: #ffffff;
+  background-color: var(--text-accent, #2563eb);
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
 }
 
 @media (max-width: 550px) {
@@ -282,4 +334,42 @@
   .hide-tablet {
     display: flex;
   }
+}
+
+/* --- USER BADGE & SIGNOUT BUTTON --- */
+.user-nav-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--bg-muted);
+  border: 1px solid var(--border-medium);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+}
+
+.user-email-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-signout-icon {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15rem;
+  border-radius: 50%;
+  transition: color 0.15s ease;
+}
+
+.btn-signout-icon:hover {
+  color: #c5221f;
 }

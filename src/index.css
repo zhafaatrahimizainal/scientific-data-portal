@@ -28,6 +28,10 @@
   --radius-sm: 4px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   /* width: 100%; */
@@ -54,6 +58,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+section {
+  scroll-margin-top: 120px;
+}
+
 /* --- RESPONSIVE CONTAINER --- */
 .portal-root {
   min-height: 100vh;
@@ -66,13 +74,15 @@ body {
 .portal-container {
   width: min(100% - 2rem, 1200px);
   margin-inline: auto;
-  padding: 0 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 @media (min-width: 768px) {
   .portal-container {
     width: min(100% - 3rem, 1200px);
-    padding: 0 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 
@@ -122,6 +132,7 @@ body {
 /* --- FLUID TYPOGRAPHY & SECTION LAYOUTS --- */
 .split-section {
   padding: clamp(2.5rem, 6vw, 5rem) 0;
+  border-top: 1px solid var(--border-light, #e5e7eb);
   border-bottom: 1px solid var(--border-light);
 }
 

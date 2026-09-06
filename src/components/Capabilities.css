@@ -1,0 +1,88 @@
+.capabilities-section {
+  padding: 4rem 0;
+  background-color: var(--bg-main, #ffffff);
+  border-top: 1px solid var(--border-light, #e5e7eb);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 3rem auto;
+}
+
+.section-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-accent, #2563eb);
+  background-color: var(--bg-muted, #f3f4f6);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill, 9999px);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--text-primary, #111827);
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary, #4b5563);
+  line-height: 1.5;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.capability-card {
+  background: var(--bg-main, #ffffff);
+  border: 1px solid var(--border-medium, #e5e7eb);
+  border-radius: var(--radius-card, 8px);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.capability-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.capability-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm, 6px);
+  background-color: var(--bg-muted, #f3f4f6);
+  border: 1px solid var(--border-light, #e5e7eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.capability-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-primary, #111827);
+}
+
+.capability-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary, #111827);
+  margin-bottom: 0.5rem;
+}
+
+.capability-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #4b5563);
+  line-height: 1.45;
+}

@@ -1,0 +1,199 @@
+.showcase-section {
+  padding: 4rem 0;
+  background-color: var(--bg-muted, #f9fafb);
+  border-top: 1px solid var(--border-light, #e5e7eb);
+}
+
+.demo-window {
+  max-width: 860px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid var(--border-medium, #d1d5db);
+  border-radius: var(--radius-card, 8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.demo-window-header {
+  background: #1e293b;
+  color: #94a3b8;
+  padding: 0.65rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+
+.window-dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ef4444; }
+.dot.yellow { background: #f59e0b; }
+.dot.green { background: #10b981; }
+
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  margin-right: 0.35rem;
+}
+
+.demo-tabs {
+  display: flex;
+  background-color: var(--bg-muted, #f1f5f9);
+  border-bottom: 1px solid var(--border-light, #e2e8f0);
+}
+
+.demo-tab {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary, #64748b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.demo-tab.active {
+  background: #ffffff;
+  color: var(--text-primary, #0f172a);
+  border-bottom: 2px solid var(--text-accent, #2563eb);
+}
+
+.demo-window-body {
+  padding: 1.5rem;
+  min-height: 220px;
+}
+
+.code-snippet {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1rem;
+  border-radius: var(--radius-sm, 6px);
+  font-family: monospace;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.keyword { color: #38bdf8; font-weight: 600; }
+.string { color: #4ade80; }
+
+.mock-result-table {
+  border: 1px solid var(--border-light, #e2e8f0);
+  border-radius: var(--radius-sm, 6px);
+  font-size: 0.825rem;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem 0.85rem;
+  border-bottom: 1px solid var(--border-light, #e2e8f0);
+}
+
+.table-row:last-child { border-bottom: none; }
+
+.table-header {
+  background: var(--bg-muted, #f8fafc);
+  font-weight: 700;
+  color: var(--text-primary, #334155);
+}
+
+.lineage-nodes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.node {
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm, 6px);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid var(--border-medium, #cbd5e1);
+  background: #ffffff;
+}
+
+.node-input { border-color: #93c5fd; background: #eff6ff; }
+.node-process { border-color: #fde047; background: #fefce8; }
+.node-output { border-color: #86efac; background: #f0fdf4; }
+
+.node-arrow {
+  color: var(--text-secondary, #94a3b8);
+  font-weight: bold;
+}
+
+.demo-caption {
+  text-align: center;
+  font-size: 0.825rem;
+  color: var(--text-secondary, #64748b);
+  margin-top: 1.5rem;
+}
+
+.mock-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.metric-box {
+  background: var(--bg-muted, #f8fafc);
+  border: 1px solid var(--border-light, #e2e8f0);
+  padding: 1.25rem;
+  border-radius: var(--radius-sm, 6px);
+  text-align: center;
+}
+
+.metric-label {
+  display: block;
+  font-size: 0.775rem;
+  color: var(--text-secondary, #64748b);
+  margin-bottom: 0.25rem;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary, #0f172a);
+}
+
+.demo-window-footer {
+  background: var(--bg-muted, #f8fafc);
+  border-top: 1px solid var(--border-light, #e2e8f0);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--text-secondary, #475569);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.demo-cta {
+  font-size: 0.825rem;
+  padding: 0.45rem 1rem;
+  display: inline-flex;
+  align-items: center;
+}
